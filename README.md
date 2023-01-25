@@ -1,8 +1,5 @@
 # PadeInterpolation
 
-## Benchmark
-![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)
-
 ## Define
 Padé interpolation is the best rational function that minimizes that the squared distance to multiple points.  
 
@@ -35,6 +32,9 @@ When the *y*-intercept is not fixed:
 
 When the *y*-intercept(*p*<sub>0</sub>=*a*) is fixed:  
 ![pade matrix without intercept](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_matrix_without_intercept.svg)  
+
+## Result
+![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)
 
 ## Implement
 See below for an example implementation.  
