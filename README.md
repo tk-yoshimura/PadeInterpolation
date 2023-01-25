@@ -1,5 +1,7 @@
 # PadeInterpolation
 
+![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)  
+
 ## Define
 Padé interpolation is the best rational function that minimizes that the squared distance to multiple points.  
 
@@ -35,7 +37,7 @@ When the *y*-intercept(*p*<sub>0</sub>=*a*) is fixed:
 
 ## Implement
 See below for an example implementation.  
-Since this is a calculation that produces a large number of digit drops, the double precision does not produce the expected results.  
+Since this is a calculation that produces many digit loss, the double precision does not produce the expected results.  
 [MultiPrecisionCurveFitting](https://github.com/tk-yoshimura/MultiPrecisionCurveFitting)
 
 ## See Also
