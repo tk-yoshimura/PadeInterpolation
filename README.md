@@ -27,10 +27,10 @@ Fortunately, it can be solved as a linear problem.
 
 The matrix representation is as follows. Note that the matrix is symmetric.  
 
-When the y-intercept is not fixed:  
+When the *y*-intercept is not fixed:  
 ![pade matrix with intercept](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_matrix_with_intercept.svg)  
 
-When the y-intercept(=*a*) is fixed:  
+When the *y*-intercept(=*a*) is fixed:  
 ![pade matrix without intercept](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_matrix_without_intercept.svg)  
 
 ## Implement
