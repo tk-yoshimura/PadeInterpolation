@@ -1,0 +1,93 @@
+\begin{eqnarray*}
+  y = \frac{p_0 + p_1 x + p_2 x^2 + \cdots + p_m x^m}{1 + q_1 x + q_2 x^2 + \cdots + q_n x^n} 
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  e(x, y; \bm{p}, \bm{q} ):=(p_0 + p_1 x + p_2 x^2 + \cdots + p_m x^m) - (y + q_1 x y + q_2 x^2 y + \cdots + q_n x^n y)
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  E = \sum_i w_i \cdot e(x, y; \bm{p}, \bm{q} )^2
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \frac{\partial E}{\partial p_0} &=& 2 ( (p_0 \sum_i w_i  + p_1 \sum_i w_i x_i + p_2 \sum_i w_i x_i^2 + \cdots + p_m \sum_i w_i x_i^m) \\
+                                   && ~~ - (\sum_i w_i y_i + q_1 \sum_i w_i x_i y_i + q_2 \sum_i w_i x_i^2 y_i + \cdots + q_n  \sum_i w_i x_i^n y_i) ) \\
+                                  &=& 2 ( (p_0 S_w  + p_1 S_{wx} + p_2 S_{wx^2} + \cdots + p_m S_{xw^m}) \\
+                                   && ~~ - (S_{wy} + q_1 S_{wxy} + q_2 S_{wx^2y} + \cdots + q_n S_{wx^ny}) )
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \frac{\partial E}{\partial p_k} &=& 2 ( (p_0 S_{wx^k}  + p_1 S_{wx^{k+1}} + p_2 S_{wx^{k+2}} + \cdots + p_m S_{xw^{k+m}}) \\
+                                   && ~~ - (S_{wx^ky} + q_1 S_{wx^{k+1}y} + q_2 S_{wx^{k+2}y} + \cdots + q_n S_{wx^{k+n}y}) )
+\end{eqnarray*}
+
+\begin{eqnarray*}
+  \frac{\partial E}{\partial q_k} &=& -2 ( (p_0 S_{wx^ky}  + p_1 S_{wx^{k+1}y} + p_2 S_{wx^{k+2}y} + \cdots + p_m S_{xw^{k+m}y}) \\
+                                   && ~~ - (S_{wx^ky^2} + q_1 S_{wx^{k+1}y^2} + q_2 S_{wx^{k+2}y^2} + \cdots + q_n S_{wx^{k+n}y^2}) )
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\left[ \begin{array}{ccccc|cccc}
+    S_{w}        & S_{wx}         & S_{wx^{2}}     & \cdots & S_{wx^{m}}     & -S_{wxy}          & -S_{wx^{2}y}      & \cdots & -S_{wx^{n}y}      \\
+    S_{wx}       & S_{wx^{2}}     & S_{wx^{3}}     &        & S_{wx^{m+1}}   & -S_{wx^{2}y}      & -S_{wx^{3}y}      &        & -S_{wx^{n+1}y}    \\
+    S_{wx^{2}}   & S_{wx^{3}}     & S_{wx^{4}}     &        & S_{wx^{m+2}}   & -S_{wx^{3}y}      & -S_{wx^{4}y}      &        & -S_{wx^{n+2}y}    \\
+    \vdots       &                &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
+    S_{wx^{m}}   & S_{wx^{m+1}}   & S_{wx^{m+2}}   & \cdots & S_{wx^{2 m}}   & -S_{wx^{m+1}y}    & -S_{wx^{m+2}y}    & \cdots & -S_{wx^{m+n}y}    \\ \hline
+    -S_{wxy}     & -S_{wx^{2}y}   & -S_{wx^{3}y}   & \cdots & -S_{wx^{m+1}y} & S_{wx^{2}y^{2}}   & S_{wx^{3}y^{2}}   & \cdots & S_{wx^{n+1}y^{2}} \\
+    -S_{wx^{2}y} & -S_{wx^{3}y}   & -S_{wx^{4}y}   &        & -S_{wx^{m+2}y} & S_{wx^{3}y^{2}}   & S_{wx^{4}y^{2}}   &        & S_{wx^{n+2}y^{2}} \\
+    \vdots       &                &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
+    -S_{wx^{n}y} & -S_{wx^{n+1}y} & -S_{wx^{n+2}y} & \cdots & -S_{wx^{m+n}y} & S_{wx^{n+1}y^{2}} & S_{wx^{n+2}y^{2}} & \cdots & S_{wx^{2 n}y^{2}} \\
+  \end{array} \right] \left[ \begin{matrix}
+    p_0     \\
+    p_1     \\
+    p_2     \\
+    \vdots  \\
+    p_m     \\ \hline
+    q_1     \\
+    q_2     \\
+    \vdots  \\
+    q_n     \\
+  \end{matrix} \right] = \left[ \begin{matrix}
+    S_{wy}        \\
+    S_{wxy}       \\
+    S_{wx^2y}     \\
+    \vdots        \\
+    S_{wx^my}     \\ \hline
+    - S_{wxy^2}   \\
+    - S_{wx^2y^2} \\
+    \vdots        \\
+    - S_{wx^ny^2} \\
+  \end{matrix} \right]
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\left[ \begin{array}{cccc|cccc}
+    S_{wx^{2}}     & S_{wx^{3}}     & \cdots & S_{wx^{m+1}}   & -S_{wx^{2}y}      & -S_{wx^{3}y}      &        & -S_{wx^{n+1}y}    \\
+    S_{wx^{3}}     & S_{wx^{4}}     &        & S_{wx^{m+2}}   & -S_{wx^{3}y}      & -S_{wx^{4}y}      &        & -S_{wx^{n+2}y}    \\
+    \vdots         &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
+    S_{wx^{m+1}}   & S_{wx^{m+2}}   & \cdots & S_{wx^{2 m}}   & -S_{wx^{m+1}y}    & -S_{wx^{m+2}y}    & \cdots & -S_{wx^{m+n}y}    \\ \hline
+    -S_{wx^{2}y}   & -S_{wx^{3}y}   & \cdots & -S_{wx^{m+1}y} & S_{wx^{2}y^{2}}   & S_{wx^{3}y^{2}}   & \cdots & S_{wx^{n+1}y^{2}} \\
+    -S_{wx^{3}y}   & -S_{wx^{4}y}   &        & -S_{wx^{m+2}y} & S_{wx^{3}y^{2}}   & S_{wx^{4}y^{2}}   &        & S_{wx^{n+2}y^{2}} \\
+    \vdots         &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
+    -S_{wx^{n+1}y} & -S_{wx^{n+2}y} & \cdots & -S_{wx^{m+n}y} & S_{wx^{n+1}y^{2}} & S_{wx^{n+2}y^{2}} & \cdots & S_{wx^{2 n}y^{2}} \\
+  \end{array} \right] \left[ \begin{matrix}
+    p_1     \\
+    p_2     \\
+    \vdots  \\
+    p_m     \\ \hline
+    q_1     \\
+    q_2     \\
+    \vdots  \\
+    q_n     \\
+  \end{matrix} \right] = \left[ \begin{matrix}
+    S_{wxy} - a S_{wx}     \\
+    S_{wx^2y} - a S_{wx^2} \\
+    \vdots                 \\
+    S_{wx^my} - a S_{wx^m} \\ \hline
+    - S_{wxy^2} + a S_{wxy}  \\
+    - S_{wx^2y^2} + a S_{wx^2y} \\
+    \vdots        \\
+    - S_{wx^ny^2} + a S_{wx^ny} \\
+  \end{matrix} \right]
+\end{eqnarray*}
