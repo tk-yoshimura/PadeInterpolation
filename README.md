@@ -25,7 +25,7 @@ Fortunately, it can be solved as a linear problem.
 ![pade partial pk](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_partial_pk.svg)  
 ![pade partial qk](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_partial_qk.svg)  
 
-The matrix representation is as follows.  
+The matrix representation is as follows. Note that the matrix is symmetric.  
 
 When the y-intercept is not fixed:  
 ![pade matrix with intercept](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_matrix_with_intercept.svg)  
