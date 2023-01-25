@@ -37,3 +37,6 @@ When the *y*-intercept(=*a*) is fixed:
 See below for an example implementation.  
 Since this is a calculation that produces a large number of digit drops, the double precision does not produce the expected results.  
 [MultiPrecisionCurveFitting](https://github.com/tk-yoshimura/MultiPrecisionCurveFitting)
+
+## See Also
+[PadeApproximation](https://github.com/tk-yoshimura/PadeApproximation)
