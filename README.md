@@ -1,7 +1,7 @@
 # PadeInterpolation
 
 ## Benchmark
-![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)  
+![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)
 
 ## Define
 Padé interpolation is the best rational function that minimizes that the squared distance to multiple points.  
