@@ -7,7 +7,7 @@
 \end{eqnarray*}
 
 \begin{eqnarray*}
-  E = \sum_i w_i \cdot e(x, y; \bm{p}, \bm{q} )^2
+  E = \sum_i w_i \cdot e(x_i, y_i; \bm{p}, \bm{q} )^2
 \end{eqnarray*}
 
 \begin{eqnarray*}
