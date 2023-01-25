@@ -18,7 +18,7 @@ If it is not weighted, it can be interpreted as if all *w* were 1.
 ![pade error sum](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_error_sum.svg)  
 
 ## Solve
-The parameter that minimizes the error has zero partial derivative for each parameter. 
+The parameter that minimizes the error is the point at which the partial derivative of each parameter is 0.
 Fortunately, it can be solved as a linear problem.
 
 ![pade partial p0](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_partial_p0.svg)  
