@@ -1,5 +1,6 @@
 # PadeInterpolation
 
+## Benchmark
 ![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)  
 
 ## Define
