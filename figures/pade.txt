@@ -91,3 +91,41 @@
     - S_{wx^ny^2} + a S_{wx^ny} \\
   \end{matrix} \right]
 \end{eqnarray*}
+
+\begin{eqnarray*}
+  E = \sum_i w_i \left( e(x_i, y_i; \bm{p}, \bm{q} )^2 + C ( ||\bm{p}||^2 + ||\bm{q}||^2 ) \right)
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\left( \left[ \begin{array}{ccccc|cccc}
+    S_{w}        & S_{wx}         & S_{wx^{2}}     & \cdots & S_{wx^{m}}     & -S_{wxy}          & -S_{wx^{2}y}      & \cdots & -S_{wx^{n}y}      \\
+    S_{wx}       & S_{wx^{2}}     & S_{wx^{3}}     &        & S_{wx^{m+1}}   & -S_{wx^{2}y}      & -S_{wx^{3}y}      &        & -S_{wx^{n+1}y}    \\
+    S_{wx^{2}}   & S_{wx^{3}}     & S_{wx^{4}}     &        & S_{wx^{m+2}}   & -S_{wx^{3}y}      & -S_{wx^{4}y}      &        & -S_{wx^{n+2}y}    \\
+    \vdots       &                &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
+    S_{wx^{m}}   & S_{wx^{m+1}}   & S_{wx^{m+2}}   & \cdots & S_{wx^{2 m}}   & -S_{wx^{m+1}y}    & -S_{wx^{m+2}y}    & \cdots & -S_{wx^{m+n}y}    \\ \hline
+    -S_{wxy}     & -S_{wx^{2}y}   & -S_{wx^{3}y}   & \cdots & -S_{wx^{m+1}y} & S_{wx^{2}y^{2}}   & S_{wx^{3}y^{2}}   & \cdots & S_{wx^{n+1}y^{2}} \\
+    -S_{wx^{2}y} & -S_{wx^{3}y}   & -S_{wx^{4}y}   &        & -S_{wx^{m+2}y} & S_{wx^{3}y^{2}}   & S_{wx^{4}y^{2}}   &        & S_{wx^{n+2}y^{2}} \\
+    \vdots       &                &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
+    -S_{wx^{n}y} & -S_{wx^{n+1}y} & -S_{wx^{n+2}y} & \cdots & -S_{wx^{m+n}y} & S_{wx^{n+1}y^{2}} & S_{wx^{n+2}y^{2}} & \cdots & S_{wx^{2 n}y^{2}} \\
+  \end{array} \right] - S_{w} C I \right) \left[ \begin{matrix}
+    p_0     \\
+    p_1     \\
+    p_2     \\
+    \vdots  \\
+    p_m     \\ \hline
+    q_1     \\
+    q_2     \\
+    \vdots  \\
+    q_n     \\
+  \end{matrix} \right] = \left[ \begin{matrix}
+    S_{wy}        \\
+    S_{wxy}       \\
+    S_{wx^2y}     \\
+    \vdots        \\
+    S_{wx^my}     \\ \hline
+    - S_{wxy^2}   \\
+    - S_{wx^2y^2} \\
+    \vdots        \\
+    - S_{wx^ny^2} \\
+  \end{matrix} \right]
+\end{eqnarray*}

@@ -36,6 +36,10 @@ When the *y*-intercept(*p*<sub>0</sub>=*a*) is fixed:
 ## Result
 ![fitting benchmark](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/fitting_benchmark.svg)
 
+## With L2Norm Cost
+![pade error sum with cost](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_error_sum_with_cost.svg)  
+![pade matrix with intercept, cost](https://github.com/tk-yoshimura/PadeInterpolation/blob/main/figures/pade_matrix_with_intercept_with_cost.svg)  
+
 ## Implement
 See below for an example implementation.  
 Since this is a calculation that produces many digit loss, the double precision does not produce the expected results.  
