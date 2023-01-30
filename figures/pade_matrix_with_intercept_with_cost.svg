@@ -42,13 +42,17 @@
      inkscape:window-height="1017"
      id="namedview1169"
      showgrid="true"
-     inkscape:zoom="1.3157322"
-     inkscape:cx="390.68417"
-     inkscape:cy="96.486732"
+     inkscape:zoom="42.103429"
+     inkscape:cx="585.53804"
+     inkscape:cy="82.958803"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="page1">
+     inkscape:current-layer="page1"
+     inkscape:snap-bbox="true"
+     inkscape:snap-center="true"
+     inkscape:snap-grids="false"
+     inkscape:snap-midpoints="true">
     <inkscape:grid
        type="xygrid"
        id="grid5910" />
@@ -2993,5 +2997,13 @@
        xlink:href="#g7-53"
        y="157.917"
        id="use1164" />
+    <use
+       x="438.35501"
+       xlink:href="#g0-0"
+       y="118.166"
+       id="use864-8"
+       width="100%"
+       height="100%"
+       transform="rotate(90,442.23822,115.68806)" />
   </g>
 </svg>
