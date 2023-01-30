@@ -107,7 +107,7 @@
     -S_{wx^{2}y} & -S_{wx^{3}y}   & -S_{wx^{4}y}   &        & -S_{wx^{m+2}y} & S_{wx^{3}y^{2}}   & S_{wx^{4}y^{2}}   &        & S_{wx^{n+2}y^{2}} \\
     \vdots       &                &                & \ddots & \vdots         & \vdots            &                   & \ddots & \vdots            \\
     -S_{wx^{n}y} & -S_{wx^{n+1}y} & -S_{wx^{n+2}y} & \cdots & -S_{wx^{m+n}y} & S_{wx^{n+1}y^{2}} & S_{wx^{n+2}y^{2}} & \cdots & S_{wx^{2 n}y^{2}} \\
-  \end{array} \right] - S_{w} C I \right) \left[ \begin{matrix}
+  \end{array} \right] + S_{w} C I \right) \left[ \begin{matrix}
     p_0     \\
     p_1     \\
     p_2     \\
